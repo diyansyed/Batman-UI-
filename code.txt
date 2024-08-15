@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+      home: Scaffold(
+    appBar: AppBar(
+      backgroundColor: Colors.white,
+      title: Center(
+        child: Text('Batman'),
+      ),
+    ),
+    bottomNavigationBar: BottomAppBar(
+      color: Colors.white ,
+    ),
+    backgroundColor: Colors.black,
+    body: const Center(
+      child: Image(image: AssetImage('assets/han.jpg'))
+    ),
+  )));
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
